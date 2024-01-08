@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Paws Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Happy Paws Survey Form</h1>
+        <img src="images/survey_form.jpeg" alt="Happy Pet">
+
+        <form id="surveyForm">
+            <label for="petType">Type of Pet:</label>
+            <input type="text" id="petType" name="petType" required>
+
+            <label for="petBreed">Breed:</label>
+            <input type="text" id="petBreed" name="petBreed" required>
+
+            <label for="petAge">Age:</label>
+            <input type="number" id="petAge" name="petAge" required>
+
+            <label for="symptoms">Symptoms:</label>
+            <textarea id="symptoms" name="symptoms" rows="4" required></textarea>
+
+            <label for="healthCheckup">Last Health Checkup Date:</label>
+            <input type="date" id="healthCheckup" name="healthCheckup" required>
+
+            <label for="dailyRoutine">Daily Routine:</label>
+            <textarea id="dailyRoutine" name="dailyRoutine" rows="4" required></textarea>
+
+            <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
